@@ -1,0 +1,72 @@
+<style>
+    :root {
+        --aj-theme-footer-bg-color: #2f2f2f;
+        --aj-theme-footer-text-color: #ffffff;
+        --aj-theme-footer-text-hover-color: #000000;
+    }
+
+    #aj-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: var(--aj-theme-footer-bg-color);
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .aj-footerTriCol {
+        background-color: var(--aj-theme-footer-bg-color);
+        width: calc(100% / 3);
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        color: var(--aj-theme-footer-text-color);
+    }
+    .aj-footerTriCol ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .aj-footerTriCol ul li a{
+        color: var(--aj-theme-footer-text-color);
+        text-decoration: none;
+    }
+    #aj-footerRowBottom {
+        height: 20px;
+        background-color: var(--aj-theme-footer-bg-color);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--aj-theme-footer-text-color);
+    }
+    .aj-flexBreak {
+        flex-basis: 100%;
+        height: 0;
+    }
+</style>
+<div id="aj-footer">
+    <div class="aj-footerTriCol" id="aj-footerTriColLeft">
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+    </div>
+    <div class="aj-footerTriCol" id="aj-footerTriColCenter">
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+    </div>
+    <div class="aj-footerTriCol" id="aj-footerTriColRight">
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+    </div>
+    <div class="aj-flexBreak"></div>
+    <div id="aj-footerRowBottom">
+        <p>© 2024 org name</p>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+site_name: {{ORG NAME}} Systems
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/favicon.svg
+  palette:
+    primary: custom
+    accent: custom
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - abs-to-rel
+  - drawio-exporter:
+      drawio_executable: null
+      format: svg
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors:
+      show_email_address: false
+  - offline
+copyright: "&copy; 2024 {{ORG NAME}}"
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+      name: Github
+    - icon: fontawesome/solid/link
+      link: https://
+      name: {{LINK 1}}
+    - icon: fontawesome/solid/link
+      link: {{LINK 2}}
+      name: Our website
+    - icon: fontawesome/solid/envelope
+      link: mailto:
+      name: Email Us
+
+repo_url: https://github.com/
+repo_name: 
+edit_uri: edit/main/docs/
