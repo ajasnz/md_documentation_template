@@ -1,0 +1,3 @@
+[submodule "obsidian_template"]
+	path = documentation
+	url = https://github.com/ajasnz/obsidian_template.git
